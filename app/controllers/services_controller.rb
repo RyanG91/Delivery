@@ -26,6 +26,7 @@ class ServicesController < ApplicationController
   # POST /services.json
   def create
     @service = Service.new(service_params)
+    @service.driver_id = current_user.email
 
     respond_to do |format|
       if @service.save
