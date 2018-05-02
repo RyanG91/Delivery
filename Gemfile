@@ -48,3 +48,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Added at 2018-05-02 10:12:01 +1000 by ryan2:
+gem "devise", "~> 4.4"
