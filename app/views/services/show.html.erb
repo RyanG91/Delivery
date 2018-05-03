@@ -21,14 +21,22 @@
 </p>
 
 <p>
+  <strong>Driver:</strong>
+  <%= @service.driver_id %>
+</p>
+
+<p>
   <strong>Distance:</strong>
   <%= @service.distance %>
 </p>
 
-<p>
-  <strong>Driver:</strong>
-  <%= @service.driver_id %>
-</p>
+<iframe
+  width="800"
+  height="650"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-d9dGo6Z72Eo-i7QkFQRoYJXwW_LLmb4
+    &q=<%= @service.full_street_address %>" allowfullscreen>
+</iframe>
 
 <%= link_to 'Edit', edit_service_path(@service) %> |
 <%= link_to 'Purchase this service', new_charge_path(service_id: @service.id) %> |

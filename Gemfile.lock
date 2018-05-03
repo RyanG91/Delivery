@@ -78,6 +78,7 @@ GEM
     faraday (0.15.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.23-x86-mingw32)
+    geocoder (1.4.7)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.0.1)
@@ -194,6 +195,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.4)
   dotenv-rails
+  geocoder (~> 1.4)
   jbuilder (~> 2.5)
   pg (>= 0.18, < 2.0)
   puma (~> 3.7)

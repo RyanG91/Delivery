@@ -55,3 +55,6 @@ gem "devise", "~> 4.4"
 
 # Added at 2018-05-03 10:40:12 +1000 by ryan2:
 gem "stripe", "~> 3.13"
+
+# Added at 2018-05-03 16:05:18 +1000 by ryan2:
+gem "geocoder", "~> 1.4"
