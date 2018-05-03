@@ -9,7 +9,7 @@
       <th>Vehicle Type</th>
       <th>Description</th>
       <th>Cost</th>
-      <th>Distance of Service</th>
+      <th>Distance</th>
       <th>Driver Email</th>
       <th colspan="3"></th>
     </tr>
@@ -24,7 +24,7 @@
         <td><%= service.cost %></td>
         <td><%= service.distance %></td>
         <td><%= service.driver_id %></td>
-        <td><%= link_to 'Show', service %></td>
+        <td><%= link_to 'View', service %></td>
         <td><%= link_to 'Edit', edit_service_path(service) %></td>
         <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -34,6 +34,7 @@
 
 <br>
 
-<%= link_to 'User list', users_path %>
-<%= link_to 'Create Service', new_service_path %>
-<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+<%= link_to 'User list', users_path %> |
+<%= link_to 'Create Service', new_service_path %> |
+<%= link_to 'List of Your Orders', orders_path %> |
+<%= link_to('Logout', destroy_user_session_path, method: :delete) %> |

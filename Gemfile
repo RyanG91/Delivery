@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 
+gem 'dotenv-rails', groups: [:development, :test]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use postgresql as the database for Active Record
@@ -51,3 +52,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Added at 2018-05-02 10:12:01 +1000 by ryan2:
 gem "devise", "~> 4.4"
+
+# Added at 2018-05-03 10:40:12 +1000 by ryan2:
+gem "stripe", "~> 3.13"

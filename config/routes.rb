@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :orders
   resources :services
   resources :users
+  resources :charges
   root to: "users#index"
   root to: "service#index"
 
