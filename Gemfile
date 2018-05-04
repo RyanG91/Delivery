@@ -58,3 +58,9 @@ gem "stripe", "~> 3.13"
 
 # Added at 2018-05-03 16:05:18 +1000 by ryan2:
 gem "geocoder", "~> 1.4"
+
+# Added at 2018-05-04 09:51:22 +1000 by ryan2:
+gem "carrierwave", "~> 1.2"
+
+# Added at 2018-05-04 09:52:19 +1000 by ryan2:
+gem "cloudinary", "~> 1.9"

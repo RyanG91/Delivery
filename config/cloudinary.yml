@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dghk9ydeb
+  api_key: '592138253596945'
+  api_secret: Mxc4w0IvJaVm0bm_ba2hso9TKCs
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dghk9ydeb
+  api_key: '592138253596945'
+  api_secret: Mxc4w0IvJaVm0bm_ba2hso9TKCs
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dghk9ydeb
+  api_key: '592138253596945'
+  api_secret: Mxc4w0IvJaVm0bm_ba2hso9TKCs
+  enhance_image_tag: true
+  static_image_support: false

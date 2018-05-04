@@ -11,6 +11,11 @@
 </p>
 
 <p>
+  <strong>Vehicle Picture:</strong>
+   <%= image_tag @service.image_url %>
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @service.name %>
 </p>
@@ -37,6 +42,7 @@
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-d9dGo6Z72Eo-i7QkFQRoYJXwW_LLmb4
     &q=<%= @service.full_street_address %>" allowfullscreen>
 </iframe>
+
 
 <%= link_to 'Edit', edit_service_path(@service) %> |
 <%= link_to 'Purchase this service', new_charge_path(service_id: @service.id) %> |

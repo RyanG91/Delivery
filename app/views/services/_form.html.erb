@@ -21,6 +21,11 @@
     <%= form.text_field :vehicle, id: :service_vehicle %>
   </div>
 
+  <div class="form-inputs">
+      <%= form.label :name %>
+      <%= form.file_field :image, as: :file %>
+    </div>
+
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name, id: :service_name %>

@@ -1,5 +1,5 @@
 class Service < ApplicationRecord
-  # belongs_to :user
+  mount_uploader :image, ServicesImageUploader
 
   geocoded_by :full_street_address
   after_validation :geocode

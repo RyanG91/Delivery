@@ -7,6 +7,7 @@
     <tr>
       <th>Service</th>
       <th>Vehicle Type</th>
+      <th>Vehicle Image</th>
       <th>Description</th>
       <th>Cost</th>
       <th>Driver Email</th>
@@ -20,6 +21,7 @@
       <tr>
         <td><%= service.service_id %></td>
         <td><%= service.vehicle %></td>
+        <td><%= image_tag service.image_url(:thumb) %></td>
         <td><%= service.name %></td>
         <td><%= service.cost %></td>
         <td><%= service.driver_id %></td>
