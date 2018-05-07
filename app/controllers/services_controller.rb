@@ -6,6 +6,9 @@ class ServicesController < ApplicationController
   # GET /services.json
   def index
     @services = Service.all
+    filtering_params.each do |key, value|
+      @services = @services.public_send(key, value) if value.present?
+    end
   end
 
   # GET /services/1
@@ -67,6 +70,10 @@ class ServicesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_service
       @service = Service.find(params[:id])
+    end
+
+    def filtering_params
+       params.slice(:vehicle, :service_id, :cost)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
