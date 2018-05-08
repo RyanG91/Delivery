@@ -64,3 +64,6 @@ gem "carrierwave", "~> 1.2"
 
 # Added at 2018-05-04 09:52:19 +1000 by ryan2:
 gem "cloudinary", "~> 1.9"
+
+# Added at 2018-05-08 11:42:51 +1000 by ryan2:
+gem "rolify", "~> 5.2"

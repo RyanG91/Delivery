@@ -1,4 +1,5 @@
 class Service < ApplicationRecord
+  resourcify
   mount_uploader :image, ServicesImageUploader
 
   scope(:vehicle, -> (vehicle) { where("LOWER(vehicle) like ?", "%#{vehicle.downcase}%")})
