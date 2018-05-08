@@ -14,4 +14,9 @@ class Service < ApplicationRecord
   def full_street_address
     "#{distance}" # Can use address, city and state.
   end
+
+  def blank_stars
+   5 - rating.to_i
+  end
+
 end

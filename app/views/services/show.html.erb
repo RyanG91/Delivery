@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 <p>
   <strong>Service:</strong>
   <%= @service.service_id %>
@@ -34,6 +36,14 @@
   <strong>Distance:</strong>
   <%= @service.distance %>
 </p>
+
+<p>
+  <strong>Rating:</strong>
+  <% @service.blank_stars.times do %>
+   <span class="glyphicon glyphicon-star-empty"></span>
+  <% end %>
+</p>
+
 
 <iframe
   width="800"
