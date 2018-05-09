@@ -18,7 +18,6 @@ class ServicesController < ApplicationController
 
   # GET /services/new
   def new
-    not_authorised and return unless current_user.can_create?
     @service = Service.new
   end
 
@@ -30,8 +29,6 @@ class ServicesController < ApplicationController
   # POST /services
   # POST /services.json
   def create
-
-    not_authorised and return unless current_user.can_create?
 
     @service = Service.new(service_params)
     @service.driver_id = current_user.email

@@ -67,3 +67,6 @@ gem "cloudinary", "~> 1.9"
 
 # Added at 2018-05-08 11:42:51 +1000 by ryan2:
 gem "rolify", "~> 5.2"
+
+# Added at 2018-05-08 13:50:16 +1000 by ryan2:
+gem "ratyrate", "~> 1.2.alpha"

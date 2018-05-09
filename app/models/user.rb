@@ -13,16 +13,14 @@ class User < ApplicationRecord
     UserNotifierMailer.send_notification(self).deliver_now
   end
 
-  def can_create?
-    self.has_role?(:admin) || self.has_role?(:author)
-  end
-
   def can_update?(post)
-    self.has_role?(:admin) || (self.has_role?(:author) && post.user == self)
+    puts '!!!!!!!'
+    puts post.inspect
+    self.has_role?(:admin) || (post.driver_id == self.email)
   end
 
   def can_delete?(post)
-    self.has_role?(:admin) || self.has_role?(:moderator) || (self.has_role?(:author) && post.user == self)
+    self.has_role?(:admin) || self.has_role?(:moderator) || (post.driver_id == self.email)
   end
 
   def user_list?(post)
