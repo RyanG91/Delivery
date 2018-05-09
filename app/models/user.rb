@@ -14,8 +14,6 @@ class User < ApplicationRecord
   end
 
   def can_update?(post)
-    puts '!!!!!!!'
-    puts post.inspect
     self.has_role?(:admin) || (post.driver_id == self.email)
   end
 

@@ -77,7 +77,7 @@ class ServicesController < ApplicationController
     end
 
     def filtering_params
-       params.slice(:vehicle, :service_id, :cost)
+       params.slice(:service_id, :vehicle, :cost)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

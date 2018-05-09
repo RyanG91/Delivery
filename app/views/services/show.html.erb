@@ -1,6 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<h1>Moober</h1>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to 'Edit', edit_service_path(@service) %> |
+  <%= link_to 'Purchase this service', new_charge_path(service_id: @service.id) %> |
+  <%= link_to 'Back', services_path %> |
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %> |
+</nav>
 
 <p>
   <strong>Service:</strong>
@@ -18,7 +26,7 @@
 </p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Service Description:</strong>
   <%= @service.name %>
 </p>
 
@@ -37,14 +45,6 @@
   <%= @service.distance %>
 </p>
 
-<p>
-  <strong>Rating:</strong>
-  <% @service.blank_stars.times do %>
-   <span class="glyphicon glyphicon-star-empty"></span>
-  <% end %>
-</p>
-
-
 <iframe
   width="800"
   height="650"
@@ -52,8 +52,3 @@
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-d9dGo6Z72Eo-i7QkFQRoYJXwW_LLmb4
     &q=<%= @service.full_street_address %>" allowfullscreen>
 </iframe>
-
-
-<%= link_to 'Edit', edit_service_path(@service) %> |
-<%= link_to 'Purchase this service', new_charge_path(service_id: @service.id) %> |
-<%= link_to 'Back', services_path %> |
