@@ -67,6 +67,11 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
     end
 
+    def not_authorised
+      flash[:notice] = "You are not authorised!"
+      redirect_to services_path
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.fetch(:user, {})
