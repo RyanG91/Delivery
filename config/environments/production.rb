@@ -88,4 +88,16 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  UserNotifierMailer.delivery_method = :smtp
+   UserNotifierMailer.smtp_settings = {
+     address:"smtp.gmail.com",
+     port: 587,
+     domain:"immense-wildwood-46995.herokuapp.com",
+     authentication: "plain",
+     user_name: ENV["GMAIL_USERNAME"],
+     password: ENV["GMAIL_PASSWORD"],
+     enable_starttls_auto: true
+  }
+
 end
