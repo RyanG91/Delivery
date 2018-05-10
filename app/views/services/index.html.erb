@@ -5,6 +5,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <%= link_to 'Profiles', users_path %> |
   <%= link_to 'Create Service', new_service_path %> |
+  <%= link_to 'Request Service' %> |
   <%= link_to 'List of Your Orders', orders_path %> |
   <%= link_to('Logout', destroy_user_session_path, method: :delete) %> |
 </nav>
@@ -59,8 +60,10 @@
         <td><%= service.driver_id %></td>
         <td><%= service.distance %></td>
         <td><%= link_to 'View', service %></td>
-        <td><%= link_to 'Edit', edit_service_path(service) %></td>
-        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if current_user.can_update?(service) %>
+          <td><%= link_to 'Edit', edit_service_path(service) %></td>
+          <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

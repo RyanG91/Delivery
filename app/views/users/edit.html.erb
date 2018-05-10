@@ -1,6 +1,17 @@
-<h1>Editing User</h1>
+<h1>Moober</h1>
+
+<br>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to 'Return to Profiles', users_path %> |
+  <%= link_to 'Show User Info', @user %> |
+  <%= link_to 'Return to Services', services_path %> |
+  <%= link_to 'List of Your Orders', orders_path %> |
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %> |
+</nav>
+<br>
+<p>Currently logged in as: <%= current_user.email %></p>
+<br>
+
+<h3>Editing User</h3>
 
 <%= render 'form', user: @user %>
-
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>

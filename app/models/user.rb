@@ -21,8 +21,8 @@ class User < ApplicationRecord
     self.has_role?(:admin) || self.has_role?(:moderator) || (post.driver_id == self.email)
   end
 
-  def user_list?(post)
-    self.has_role?(:admin)
+  def can_edit?(user)
+    self.has_role?(:admin) || (user.email == self.email)
   end
 
 end

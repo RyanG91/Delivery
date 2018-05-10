@@ -4,6 +4,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <%= link_to 'Return to Services', services_path %> |
   <%= link_to 'Create Service', new_service_path %> |
+  <%= link_to 'Request Service' %> |
   <%= link_to 'List of Your Orders', orders_path %> |
   <%= link_to('Logout', destroy_user_session_path, method: :delete) %> |
 </nav>
@@ -11,17 +12,24 @@
 <p>Currently logged in as: <%= current_user.email %></p>
 <br>
 
-<h3>Profiles</h3>
-
 <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Moober Profiles</th>
+      <th colspan="3"></th>
+
+    </tr>
+  </thead>
 
   <tbody>
     <% @users.each do |user| %>
       <tr>
         <td><%= user.email %></td>
         <td><%= link_to 'Show', user %></td>
+        <% if current_user.can_edit?(user) %>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

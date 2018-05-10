@@ -1,3 +1,14 @@
 // Place all the styles related to the Services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  // font-weight, font, size/line-height, font-familiy
+  font: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #f44336;
+}
+
+body {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}

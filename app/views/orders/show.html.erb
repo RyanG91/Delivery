@@ -1,5 +1,23 @@
 <p id="notice"><%= notice %></p>
 
+<h1>Moober Order Number: <%= @order.id %></h1>
+
+
+<br>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to 'Return to Services', services_path %> |
+  <%= link_to 'Return to Orders', orders_path %> |
+  <%= link_to 'Profiles', users_path %> |
+  <%= link_to 'Create Service', new_service_path %> |
+  <%= link_to 'Request Service' %> |
+
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %> |
+</nav>
+<br>
+<br>
+<p>Currently logged in as: <%= current_user.email %></p>
+<br>
+
 <p>
   <strong>Order:</strong>
   <%= @order.id %>
@@ -29,6 +47,3 @@
   <strong>Service:</strong>
   <%= @order.service_id %>
 </p>
-
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>

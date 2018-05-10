@@ -1,5 +1,16 @@
 <h1>New Service</h1>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to 'Return to Services', services_path %> |
+  <%= link_to 'Profiles', users_path %> |
+  <%= link_to 'List of Your Orders', orders_path %> |
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %> |
+</nav>
+
+<br>
+<p>Currently logged in as: <%= current_user.email %></p>
+<br>
+
 <%= render 'form', service: @service %>
 
 <%= link_to 'Back', services_path %>

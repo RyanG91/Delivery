@@ -1,11 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Orders</h1>
+<h1>Your Moober Orders</h1>
+<br>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to 'Return to Services', services_path %> |
+  <%= link_to 'Profiles', users_path %> |
+  <%= link_to 'Create Service', new_service_path %> |
+  <%= link_to 'Request Service' %> |
 
-<table>
-  <thead>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %> |
+</nav>
+<br>
+<br>
+<p>Currently logged in as: <%= current_user.email %></p>
+<br>
+
+
+<table class="table">
+  <thead class="thead-dark">
     <tr>
-      <th>Order</th>
+      <th>Order Number</th>
       <th>User Id</th>
       <th>Driver</th>
       <th>Cost</th>
@@ -28,7 +42,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'Back to Services', services_path %> |

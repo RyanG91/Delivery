@@ -1,8 +1,23 @@
 <p id="notice"><%= notice %></p>
 
+<h1>Moober</h1>
+
+<br>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to 'Return to Profiles', users_path %> |
+  <% if current_user.can_edit?(@user) %>
+    <%= link_to 'Edit User Info', edit_user_path(@user) %> |
+  <% end %>
+  <%= link_to 'Return to Services', services_path %> |
+  <%= link_to 'List of Your Orders', orders_path %> |
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %> |
+</nav>
+<br>
+<p>Currently logged in as: <%= current_user.email %></p>
+<br>
+
+<h3>Moober User Information</h3>
+
 <%= @user.email %>
 
 <br>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
