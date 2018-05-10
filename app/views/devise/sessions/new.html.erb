@@ -1,4 +1,5 @@
-<h2>Log in</h2>
+<h2>Welcome to Moober,</h2>
+<h3>Please log in or sign up - its free</h3>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -19,8 +20,11 @@
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", class:"btn btn-warning" %>
   </div>
 <% end %>
+
+<h5>Moober is a fast and effective way to get something delivered or to deliver objects for users.</h5>
+
 
 <%= render "devise/shared/links" %>

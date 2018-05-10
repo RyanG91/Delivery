@@ -15,8 +15,8 @@
   <div class="panel-body">
     <form class="form-inline">
       <div class="form-group">
-        <label for="description">Service Name:</label>
-        <input type="text" name="service" class="form-control">
+        <label for="service_id">Service Name:</label>
+        <input type="text" name="service_id" class="form-control">
       </div>
       <div class="form-group">
         <label for="product_name">Vehicle:</label>
@@ -26,7 +26,8 @@
         <label for="price">Cost:</label>
         <input type="text" name="cost" class="form-control">
       </div>
-      <input type="submit" value="Search" class="btn btn-default">
+      <input type="submit" value="Search" class="btn btn-dark">
+      <%= link_to "Clear Search", services_path, class:"btn btn-warning" %>
     </form>
   </div>
 </div>
@@ -36,6 +37,8 @@
 <br>
 <p>Currently logged in as: <%= current_user.email %></p>
 <br>
+
+<h3>Services Offered</h3>
 
 <table class="table">
   <thead class="thead-dark">
@@ -68,3 +71,7 @@
     <% end %>
   </tbody>
 </table>
+
+<br>
+
+<h3>Services Needed</h3>
