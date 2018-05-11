@@ -25,6 +25,7 @@ Things you may want to cover:
 
 
 Links:
+
 App website:https://immense-wildwood-46995.herokuapp.com/users/sign_in
 
 Github repository: https://github.com/RyanG91/delivery
@@ -53,19 +54,22 @@ Wireframes:
 ![list of profiles](https://user-images.githubusercontent.com/33079422/39899985-361fac1c-5502-11e8-9d7e-d09cee12fa4a.PNG)
 
 4)	A user profile:
-![service details](https://user-images.githubusercontent.com/33079422/39900037-94845b90-5502-11e8-8725-ade7c18b3b2c.PNG)
+![user profile](https://user-images.githubusercontent.com/33079422/39900042-983dee2c-5502-11e8-8ee4-f9ca27bd38a9.PNG)
 
 5)	Service details:
-![user profile](https://user-images.githubusercontent.com/33079422/39900042-983dee2c-5502-11e8-8ee4-f9ca27bd38a9.PNG)
+![service details](https://user-images.githubusercontent.com/33079422/39900037-94845b90-5502-11e8-8725-ade7c18b3b2c.PNG)
 
 Flow Charts:
 1)	Driver Flowchart:
+
 ![wireframe driver](https://user-images.githubusercontent.com/33079422/39900057-acf8a320-5502-11e8-88b2-f6aa3f8328eb.PNG)
 
 2)	Client Flowchart:
+
 ![wireframe client](https://user-images.githubusercontent.com/33079422/39900062-b5a251ce-5502-11e8-9ca3-35a0c5858476.PNG)
 
 Entity Relationship Diagram:
+
 ![erd](https://user-images.githubusercontent.com/33079422/39900072-c60e4158-5502-11e8-9aae-a500d4379ad0.PNG)
 
 Design Decisions:
