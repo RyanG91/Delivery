@@ -23,10 +23,9 @@ Things you may want to cover:
 
 * ...
 
-
 Links:
 
-App website:https://immense-wildwood-46995.herokuapp.com/users/sign_in
+App website: https://immense-wildwood-46995.herokuapp.com/users/sign_in
 
 Github repository: https://github.com/RyanG91/delivery
 
