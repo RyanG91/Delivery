@@ -56,36 +56,18 @@ User stories:
 
 Wireframes:
 1)	Main Page:
-
-
-
-
-
-
-
-
-
-
+![main page services](https://user-images.githubusercontent.com/33079422/39899956-118c9540-5502-11e8-9136-30ac85fcb75a.PNG)
 
 2)	Order Receipt:
 
 
 3)	List of Profiles:
-
-
-
-
-
+![list of profiles](https://user-images.githubusercontent.com/33079422/39899985-361fac1c-5502-11e8-9d7e-d09cee12fa4a.PNG)
 
 4)	A user profile:
 
 
 5)	Service details:
-
-
-
-
-
 
 
 Flow Charts:
