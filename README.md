@@ -39,82 +39,34 @@ The app solves this problem of costly/time constraints in regards to moving sinc
 
 The app is a two sided marketplace where drivers can contact clients or post their services on the app, set a price and the range of the service while clients can contact drivers or post their required service and the rate at how much they are willing to pay.
 
-
-
-
-
-
-
-
-
-
-
-
-
 User stories:
-
+![user stories](https://user-images.githubusercontent.com/33079422/39900088-d90ac1c8-5502-11e8-98ad-184a48ac2333.PNG)
 
 Wireframes:
 1)	Main Page:
 ![main page services](https://user-images.githubusercontent.com/33079422/39899956-118c9540-5502-11e8-9136-30ac85fcb75a.PNG)
 
 2)	Order Receipt:
-
+![order receipts](https://user-images.githubusercontent.com/33079422/39900028-87e379de-5502-11e8-8691-96e95f874518.PNG)
 
 3)	List of Profiles:
 ![list of profiles](https://user-images.githubusercontent.com/33079422/39899985-361fac1c-5502-11e8-9d7e-d09cee12fa4a.PNG)
 
 4)	A user profile:
-
+![service details](https://user-images.githubusercontent.com/33079422/39900037-94845b90-5502-11e8-8725-ade7c18b3b2c.PNG)
 
 5)	Service details:
-
+![user profile](https://user-images.githubusercontent.com/33079422/39900042-983dee2c-5502-11e8-8ee4-f9ca27bd38a9.PNG)
 
 Flow Charts:
 1)	Driver Flowchart:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![wireframe driver](https://user-images.githubusercontent.com/33079422/39900057-acf8a320-5502-11e8-88b2-f6aa3f8328eb.PNG)
 
 2)	Client Flowchart:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![wireframe client](https://user-images.githubusercontent.com/33079422/39900062-b5a251ce-5502-11e8-9ca3-35a0c5858476.PNG)
 
 Entity Relationship Diagram:
-
+![erd](https://user-images.githubusercontent.com/33079422/39900072-c60e4158-5502-11e8-9aae-a500d4379ad0.PNG)
 
 Design Decisions:
 The design decisions used were mostly through Bootstrap and CSS. The decision for using these style of designs was due to their ease of access, time constraints and how effective they are. The fonts and colours were kept relatively simple to demonstrate to users the ease of understanding and following around the website with minimal difficulty.
